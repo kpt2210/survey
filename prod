@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Survey form</title>
+</head>
+<body style="background-color: rgba(167, 209, 237, 0.568);">
+     
+        
+    <h2>Survey form</h2>
+    <style>h2{ 
+        background-color: rgb(92, 177, 208); 
+        margin: 40px;
+        text-align: center;
+        padding: 2%;
+        
+    }</style>
+    <hr> <br>
+    <div style="background-color: rgba(101, 164, 203, 0.568);
+       border-radius:10%;
+       border: 3.5px solid rgb(92, 177, 208);
+        padding: 3%; margin: 2%; ">
+        
+    
+    <fieldset>
+        <legend>Information required for survey</legend>
+            <label form ="Name">Name  </label>
+            <input type="text" id="Name" placeholder="Enter your name"  style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655) ;" >
+            <br><br>
+            <label for="email">Email id</label>
+            
+            <input type="email" id="email" placeholder="abc@gmail.com" required style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655);"><br><br>
+            <label for="password">Password</label>
+            <input type="password" style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655)"><br><br>
+            <label for="Age">Age</label>
+            <input type="number"  placeholder="Age" min="14" max="35" style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655)"><br><br>
+            <label for="role">Which option best describe your current role?</label>
+            <select id="role" style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655)" ;>
+                <option value="student">Student</option>
+                <option value="teachers">Teachers</option>
+                <option value="others">Others</option>
+            </select><br><br>
+            <label for="recommend">How likely is that you would recommend this course to a friend?: </label><br>
+            <input type="radio" name="recommend" value="Maybe">Maybe
+            <input type="radio" name="recommend" value="Definitely">Definitely
+            <input type="radio" name="recommend" value="Not sure">Not sure<br><br>
+            <label for="language">What do you like the most in the course</label>
+            <select id="language" style="box-shadow: 2px 2px rgba(19, 115, 150, 0.655)">
+                <option value="select">Select an option </option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="JAVA">JAVA</option>
+                <option value="OTHER">OTHER</option>
+            </select><br><br>
+            <label for="future" >Things that should be improved in the future(Check all that apply)</label><br>
+            <input type="checkbox" name="future" value="Front-end projects">Front-end projects
+            <input type="checkbox" name="future" value="Back-end projects">Back-end projects
+            <input type="checkbox" name="future" value="Data visualization">Data visualization
+    </fieldset>
+</div><hr>
+
+</body>
+</html>
